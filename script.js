@@ -30,7 +30,10 @@ numberBtns.forEach((button) => {
 
 
 // Add event listener to decimal button 
-
+decimalBtn.addEventListener('click', () => {
+    appendDecimal(); 
+    updateDisplay(); 
+})
 
 // Add event listener to equals button 
 
@@ -52,7 +55,11 @@ function appendNumber(number) {
 
 
 // Helper function appendDecimal() 
-
+function appendDecimal() {
+    if (!currentNumber.includes('.')) {
+        currentNumber += '.'; 
+    }
+}
 
 // Helper function setOperator(op) 
 
