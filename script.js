@@ -41,6 +41,8 @@ clearBtn.addEventListener('click', () => {
     clearDisplay(); 
 })
 
+// Functions
+
 // Helper Function appendNumber(number)
 function appendNumber(number) { 
     currentNumber += number; 
