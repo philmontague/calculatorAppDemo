@@ -1,34 +1,58 @@
-// const numbers = document.querySelectorAll('.number'); 
-// const operators = document.querySelectorAll('.operator'); 
 
 
-// Declare variables for DOM elements in IIFE scope
+// Display element 
+const display = document.querySelector('.display'); 
+
+// Number buttons 
+const numberBtns = document.querySelectorAll('.number'); 
+
+// Operator buttons  
+const operatorBtns = document.querySelectorAll('.operator'); 
+
+// Decimal button 
+const decimalBtn = document.querySelector('.decimal'); 
+
+// Evaluate button  
+const equalsBtn = document.querySelector('.evaluate'); 
+
+// Clear button 
+const clearBtn = document.querySelector('.clear'); 
+
+let currentNumber = ''; 
+let previousNumber = ''; 
+let operator = null; 
+
+// Add event listeners to number buttons 
+numberBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+        appendNumber(button.textContent); 
+        updateDisplay(); 
+    }); 
+}); 
+
+// Add event listeners to operator buttons 
 
 
 
-// Define functions:
-// handleNumberClick()
-// handleOperatorClick()
-// handleDecimalClick()
-// handleClear()
-// evaluateExpression()
-// updateDisplay()
+// Add event listener to decimal button 
 
-// Add click event listeners for buttons
 
-// Store clicked values in variables:
-// currentNumber
-// previousNumber
-// currentOperator
+// Add event listener to equals button 
 
-// When operator is clicked:
-// Store currentNumber to previousNumber
-// Store operator to currentOperator
-// Clear currentNumber
+// Add event listener for display 
+ 
 
-// When equals clicked:
-// Pass previousNumber, currentNumber and currentOperator to evaluateExpression()
-// evaluateExpression performs the math operation
-// Pass result to updateDisplay() to display
+// Add event listener for clear button 
 
-// Clear all on clear button click
+
+// Helper Function appendNumber(number) 
+
+// Helper function appendDecimal() 
+
+// Helper function setOperator(op) 
+
+
+// Helper function clear() 
+
+
+// Helper function updateDisplay() 
