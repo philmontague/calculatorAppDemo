@@ -23,15 +23,9 @@ let previousNumber = '';
 let operator = null; 
 
 // Add event listeners to number buttons 
-numberBtns.forEach((button) => {
-    button.addEventListener('click', () => {
-        appendNumber(button.textContent); 
-        updateDisplay(); 
-    }); 
-}); 
+
 
 // Add event listeners to operator buttons 
-
 
 
 // Add event listener to decimal button 
@@ -39,15 +33,18 @@ numberBtns.forEach((button) => {
 
 // Add event listener to equals button 
 
+
 // Add event listener for display 
  
 
 // Add event listener for clear button 
 
 
-// Helper Function appendNumber(number) 
+// Helper Function appendNumber(number)
+
 
 // Helper function appendDecimal() 
+
 
 // Helper function setOperator(op) 
 
