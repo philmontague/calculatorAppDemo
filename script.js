@@ -1,5 +1,3 @@
-
-
 // Display element 
 const display = document.querySelector('.display'); 
 // Number buttons 
@@ -33,7 +31,7 @@ numberBtns.forEach((button) => {
 decimalBtn.addEventListener('click', () => {
     appendDecimal(); 
     updateDisplay(); 
-})
+}); 
 
 // Add event listener to equals button 
 
@@ -45,9 +43,7 @@ clearBtn.addEventListener('click', () => {
 
 // Helper Function appendNumber(number)
 function appendNumber(number) { 
-    // Append the clicked number to the currentNumber string 
     currentNumber += number; 
-    // Updare display with current number 
     updateDisplay(); 
 }
 
