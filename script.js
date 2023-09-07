@@ -35,9 +35,6 @@ numberBtns.forEach((button) => {
 // Add event listener to equals button 
 
 
-// Add event listener for display 
-
-
 // Add event listener for clear button 
 clearBtn.addEventListener('click', () => {
     clearDisplay(); 
@@ -50,6 +47,9 @@ function appendNumber(number) {
     // Updare display with current number 
     updateDisplay(); 
 }
+
+// Function calculate() 
+
 
 // Helper function appendDecimal() 
 
