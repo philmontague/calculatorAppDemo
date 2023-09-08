@@ -24,7 +24,14 @@ numberBtns.forEach((button) => {
     }); 
 }); 
 
+
 // Add event listeners to operator buttons 
+operatorBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+        let operator = button.textContent; 
+        setOperator(operator); 
+    }); 
+}); 
 
 
 // Add event listener to decimal button 
@@ -34,6 +41,7 @@ decimalBtn.addEventListener('click', () => {
 }); 
 
 // Add event listener to equals button 
+
 
 
 // Add event listener for clear button 
@@ -60,6 +68,15 @@ function appendDecimal() {
 }
 
 // Helper function setOperator(op) 
+function setOperator(op) { 
+    if (previousNumber !== '' && operator !== null) { 
+        calculate(); 
+    }
+    operator = op; 
+    previousNumber = currentNumber; 
+    currentNumber = ''; 
+    updateDisplay(); 
+}
 
 
 // Helper function clearDisplay() 
